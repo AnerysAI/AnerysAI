@@ -1,4 +1,4 @@
-from nlp.preprocess import clean
+from nlp.preprocessor import clean
 from nlp.intent_classifier import IntentClassifier
 from dialogue.state import DialogueState
 from dialogue.policy import decide
