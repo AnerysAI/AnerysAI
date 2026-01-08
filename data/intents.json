@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "name": "AnerysAI",
+    "version": "1.0"
+  },
+
+  "greet": {
+    "patterns": ["halo", "hai", "hello", "pagi", "malam"],
+    "responses": [
+      "Halo 👋",
+      "Hai! Ada yang bisa kubantu?",
+      "Halo, gimana kabarmu?",
+      "Hai 🙂 Mau bahas apa hari ini?",
+      "Halo! Aku siap dengerin."
+    ]
+  },
+
+  "ask": {
+    "patterns": [
+      "apa itu",
+      "jelaskan",
+      "gimana caranya",
+      "kenapa",
+      "bagaimana",
+      "tolong jelasin"
+    ],
+    "responses": [
+      "Oke, aku coba jelaskan ya.",
+      "Pertanyaan yang bagus.",
+      "Menarik. Kita bahas pelan-pelan.",
+      "Bisa. Tapi aku perlu sedikit konteks.",
+      "Aku bantu jelasin sebisaku."
+    ]
+  },
+
+  "chat": {
+    "patterns": [
+      "menurut kamu",
+      "aku merasa",
+      "cerita dong",
+      "ngobrol",
+      "lagi mikir"
+    ],
+    "responses": [
+      "Hmm, menarik 🤔",
+      "Aku paham maksudmu.",
+      "Ceritakan lebih lanjut.",
+      "Oke, aku dengerin.",
+      "Lanjut, aku penasaran."
+    ]
+  },
+
+  "thanks": {
+    "patterns": ["terima kasih", "makasih", "thanks", "thx"],
+    "responses": [
+      "Sama-sama 😊",
+      "Dengan senang hati.",
+      "Siap!",
+      "Santai aja 👍",
+      "Kapan pun kamu butuh."
+    ]
+  },
+
+  "bye": {
+    "patterns": ["bye", "dadah", "sampai jumpa", "keluar"],
+    "responses": [
+      "Sampai jumpa 👋",
+      "Dadah, hati-hati ya.",
+      "Semoga harimu menyenangkan.",
+      "Oke, sampai ketemu lagi."
+    ]
+  },
+
+  "who_are_you": {
+    "patterns": [
+      "kamu siapa",
+      "ini siapa",
+      "siapa kamu",
+      "kamu ai apa"
+    ],
+    "responses": [
+      "Aku AnerysAI, asisten AI versi 1.0.",
+      "Aku AnerysAI. Tugas utamaku bantu dan ngobrol denganmu.",
+      "Aku AI yang dibuat buat ngobrol dan bantu jawab pertanyaan."
+    ]
+  }
+}
