@@ -11,7 +11,9 @@ class Vocabulary:
             for w in text.split():
                 counter[w] += 1
 
-        self.word2idx = {w: i for i, w in enumerate(counter)}
+        # Sort by frequency untuk konsistensi
+        sorted_words = sorted(counter.items(), key=lambda x: x[1], reverse=True)
+        self.word2idx = {w: i for i, (w, _) in enumerate(sorted_words)}
         self.idx2word = {i: w for w, i in self.word2idx.items()}
 
     def vectorize(self, text):

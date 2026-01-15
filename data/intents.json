@@ -1,87 +1,699 @@
 {
   "meta": {
     "name": "AnerysAI",
-    "version": "1.0"
+    "version": "1.0",
+    "description": "Large-scale Indonesian NLP dataset with 4000+ training patterns"
   },
 
   "greet": {
-    "patterns": ["halo", "hai", "hello", "pagi", "malam"],
+    "patterns": [
+      "halo", "hai", "hello", "pagi", "malam", "salam", "assalamu alaikum",
+      "pagi bro", "malam kak", "halo apa kabar", "hai gimana kabar",
+      "pagi apa kabar", "selamat pagi", "selamat malam", "selamat siang",
+      "hello there", "hi there", "good morning", "good evening",
+      "yo", "hey", "sup", "wazzup", "morning", "afternoon",
+      "selamat datang", "welcome", "salamualaikum", "wa alaikum assalam",
+      "halo siapa", "hai siapa", "elo siapa", "gue halo",
+      "salam kenal", "berkenal", "perkenalan", "halo nama aku",
+      "pagi sayang", "malam sayang", "halo sobat", "hai teman",
+      "assalamualaikum", "alaikum salam", "salam hormat", "salam sejahtera",
+      "halo sobat", "halo teman", "halo bro", "halo sis",
+      "lagi ngapain", "lagi apa", "sedang apa", "sedang ngapain",
+      "gimana hari ini", "bagaimana hari ini", "hari ini apa",
+      "sudah makan", "sudah tidur", "sudah bangun", "sudah ganti baju"
+    ],
     "responses": [
       "Halo 👋",
       "Hai! Ada yang bisa kubantu?",
       "Halo, gimana kabarmu?",
       "Hai 🙂 Mau bahas apa hari ini?",
-      "Halo! Aku siap dengerin."
+      "Halo! Aku siap dengerin.",
+      "Selamat datang! Apa yang bisa kubantu?",
+      "Halo kamu! Senang bertemu denganmu.",
+      "Hai! Bagaimana harimu?"
     ]
   },
 
   "ask": {
     "patterns": [
-      "apa itu",
-      "jelaskan",
-      "gimana caranya",
-      "kenapa",
-      "bagaimana",
-      "tolong jelasin"
+      "apa itu", "jelaskan", "gimana caranya", "kenapa", "bagaimana",
+      "tolong jelasin", "bisa jelasin", "apa maksudnya", "kapan", "siapa",
+      "dimana", "berapa", "punya info gak", "bisa bantu", "tolong bantu",
+      "aku bingung", "bisa dijelaskan", "bisa dijelasin lebih detail",
+      "apa yang", "gimana", "cara", "bagaimana caranya", "bagaimanakan",
+      "bisa dijelasin", "jelaskan dong", "tolong jelaskan", "jelas kan",
+      "apa hubungannya", "apa bedanya", "apa perbedaannya", "apa persamaannya",
+      "kenapa gini", "kenapa begitu", "kenapa kok", "kok bisa",
+      "bisa gak", "bisa tidak", "mampu gak", "sanggup gak",
+      "info apa", "informasi apa", "tahu gak", "ada info gak",
+      "detail dong", "detil donk", "rinci dong", "penjelasan dong",
+      "tolong dijelaskan", "mohon dijelaskan", "silahkan jelaskan",
+      "apa definisinya", "definisi apa", "maksud", "pengertian",
+      "arti apa", "artinya apa", "apa arti", "artinya gimana",
+      "beri tahu", "bilang dong", "katakan", "sampaikan",
+      "pernah", "pernah gak", "pernah tidak", "sudah pernah",
+      "terakhir kapan", "berapa lama", "sudah berapa lama",
+      "contoh", "contoh apa", "beri contoh", "contoh dong"
     ],
     "responses": [
       "Oke, aku coba jelaskan ya.",
       "Pertanyaan yang bagus.",
       "Menarik. Kita bahas pelan-pelan.",
       "Bisa. Tapi aku perlu sedikit konteks.",
-      "Aku bantu jelasin sebisaku."
+      "Aku bantu jelasin sebisaku.",
+      "Bagus pertanyaannya, mari kita diskusi.",
+      "Aku coba bantu jelaskan dengan mudah.",
+      "Oke, dengarkan penjelasan aku."
     ]
   },
 
   "chat": {
     "patterns": [
-      "menurut kamu",
-      "aku merasa",
-      "cerita dong",
-      "ngobrol",
-      "lagi mikir"
+      "menurut kamu", "aku merasa", "cerita dong", "ngobrol", "lagi mikir",
+      "gimana menurutmu", "apa pendapatmu", "punya cerita gak", "share dong",
+      "cerita pengalaman", "gosip", "tanya personal", "tentang aku",
+      "berbagi", "curhat", "obrolan", "diskusi", "percakapan",
+      "cerita seru", "cerita menarik", "ada kabar", "kabar apa",
+      "apa kabar", "gimana kabar", "cerita apa", "apa cerita",
+      "pengalaman", "pengalaman kamu", "pengalaman aku", "pengalaman siapa",
+      "opini", "pendapat", "pandangan", "persepsi", "sudut pandang",
+      "mau tahu", "penasaran", "ingin tahu", "kepo", "curious",
+      "berbincang", "bincang", "ngobrol santai", "obrolan santai",
+      "punya cerita", "punya pengalaman", "punya opini", "punya pandangan",
+      "minta saran", "minta nasihat", "butuh masukan", "butuh ide",
+      "apa pendapat", "apa opini", "apa pikiran", "apa pandangan",
+      "seru gak", "menarik gak", "seru tidak", "menarik tidak",
+      "sharing pengalaman", "berbagi cerita", "tukar pikiran", "diskusi apa",
+      "curhatan", "keluh kesah", "masalah", "persoalan", "isu",
+      "kabar terbaru", "berita terkini", "yang baru", "trending",
+      "rahasia", "sesuatu", "sesuatu yang", "ada apa", "ada masalah",
+      "trending", "viral", "laris", "hits", "populer"
     ],
     "responses": [
       "Hmm, menarik 🤔",
       "Aku paham maksudmu.",
       "Ceritakan lebih lanjut.",
       "Oke, aku dengerin.",
-      "Lanjut, aku penasaran."
+      "Lanjut, aku penasaran.",
+      "Ooh, cerita yang seru!",
+      "Aku tertarik mendengarnya.",
+      "Terus, ada lagi gak?"
     ]
   },
 
   "thanks": {
-    "patterns": ["terima kasih", "makasih", "thanks", "thx"],
+    "patterns": [
+      "terima kasih", "makasih", "thanks", "thx", "tq", "appreciate",
+      "aku berterima kasih", "thank you", "appreciate it", "makasih banget",
+      "trims", "terima kasih banyak", "makasih banyak", "thank you so much",
+      "terimakaih", "terimakasih", "makasi", "tks", "thanx",
+      "thanks mate", "thanks buddy", "thanks dude", "thanks bro",
+      "much appreciated", "very appreciated", "highly appreciated",
+      "aku appreciate", "aku appreciate banget", "aku nghargai",
+      "haturan nuhun", "makacih", "thanks a lot", "thanks very much",
+      "syukur", "alhamdulillah atas", "terima kasih atas", "makasih atas",
+      "tq atas", "thanks atas", "thank for", "thanks for",
+      "berkat", "bersyukur", "grateful", "bersyukuran",
+      "aku berterima kasih banyak", "aku sangat berterima kasih",
+      "tak terlupakan", "unforgettable", "tidak akan pernah terlupakan",
+      "favor", "favormu", "bantuan", "pertolongan", "dukungan",
+      "support", "backing", "encouraging", "motivating",
+      "penting", "penting banget", "berarti", "bermakna"
+    ],
     "responses": [
       "Sama-sama 😊",
       "Dengan senang hati.",
       "Siap!",
       "Santai aja 👍",
-      "Kapan pun kamu butuh."
+      "Kapan pun kamu butuh.",
+      "Radi senang bisa bantu!",
+      "Tidak masalah, itu tugasku.",
+      "Senang bisa membantu! 😄"
     ]
   },
 
   "bye": {
-    "patterns": ["bye", "dadah", "sampai jumpa", "keluar"],
+    "patterns": [
+      "bye", "dadah", "sampai jumpa", "keluar", "exit", "quit",
+      "goodbye", "dah", "see you", "sampai ketemu", "sampai nanti",
+      "aku pergi", "sudah dulu", "habis chat", "bye bye",
+      "goodbye mate", "see you later", "see you soon", "see you tomorrow",
+      "sampai ketemu besok", "sampai ketemu lagi", "sampai nanti ya",
+      "dadadah", "dadah dah", "da da da", "ci ci", "ciao",
+      "farewell", "salam perpisahan", "pergi dulu", "pergi duluan",
+      "berangkat", "berangkat dulu", "saya pergi", "aku pergi dulu",
+      "sebentar aja", "sebentar lagi", "nanti lagi", "habis ini",
+      "sampai jumpa lagi", "sampai bertemu lagi", "bertemu lagi",
+      "hingga jumpa", "hingga bertemu", "hingga nanti", "hingga lagi",
+      "yaudah", "udah", "stop", "end", "finish", "selesai",
+      "terakhir", "kali ini aja", "untuk kali ini", "for now",
+      "dulu ya", "pergi dulu ya", "duluan ya", "permisi dulu",
+      "jalan dulu", "cabut", "cabut dulu", "molor", "molor dulu",
+      "tutup", "close", "akhiri", "tamat", "selesai"
+    ],
     "responses": [
       "Sampai jumpa 👋",
       "Dadah, hati-hati ya.",
       "Semoga harimu menyenangkan.",
-      "Oke, sampai ketemu lagi."
+      "Oke, sampai ketemu lagi.",
+      "Jangan lupa istirahat! 😊",
+      "Semoga bertemu lagi.",
+      "Dadah, senang berbincang denganmu!"
     ]
   },
 
   "who_are_you": {
     "patterns": [
-      "kamu siapa",
-      "ini siapa",
-      "siapa kamu",
-      "kamu ai apa"
+      "kamu siapa", "ini siapa", "siapa kamu", "kamu ai apa",
+      "identitas kamu", "nama kamu", "apa nama kamu", "siapa namamu",
+      "kamu yang mana", "introduced yourself", "cerita tentang diri kamu",
+      "kamu tu siapa", "siapa diri kamu", "siapa kamu sih", "kamu siapa sih",
+      "apa nama", "siapa nama", "namaku siapa", "nama aku apa",
+      "profesi kamu", "pekerjaan kamu", "keahlian kamu", "kemampuan kamu",
+      "asal usul", "asal kamu", "dari mana kamu", "berasal dari mana",
+      "creator", "pembuat", "pencipta", "yang membuat", "siapa yang bikin",
+      "tujuan", "tujuan kamu", "maksud", "maksud kamu", "untuk apa",
+      "apa fungsi", "fungsi apa", "kegunaan apa", "manfaat apa",
+      "versi berapa", "version berapa", "update apa", "yang baru apa",
+      "spesialisasi", "keahlian", "expertise", "skill apa",
+      "background", "latar belakang", "sejarah", "kisah", "story",
+      "teknologi", "platform", "operating system", "basis data",
+      "bahasa pemrograman", "bahasa yang digunakan", "coding"
     ],
     "responses": [
-      "Aku AnerysAI, asisten AI versi 1.0.",
+      "Aku AnerysAI, asisten AI versi 3.0.",
       "Aku AnerysAI. Tugas utamaku bantu dan ngobrol denganmu.",
-      "Aku AI yang dibuat buat ngobrol dan bantu jawab pertanyaan."
+      "Aku AI yang dibuat buat ngobrol dan bantu jawab pertanyaan.",
+      "Nama aku AnerysAI, senang kenal!",
+      "Aku adalah chatbot AI buatan sendiri."
+    ]
+  },
+
+  "help": {
+    "patterns": [
+      "bantuan", "help", "tolong", "aku butuh bantuan", "pertolongan",
+      "bisa dibantu", "butuh info", "informasi", "apa yang bisa kamu lakukan",
+      "kemampuan kamu", "fitur apa", "bisa apa aja", "apa keahlian",
+      "tolongin", "bantuannya", "bantu dong", "bisa bantu gak",
+      "aku perlu bantuan", "aku perlu tolong", "dimohon bantuan",
+      "mohon bantuan", "mohon pertolongan", "perlu pertolongan",
+      "rescue me", "selamatkan aku", "pertolongan darurat", "emergency",
+      "apa yang bisa dibantu", "apa yang bisa dikerjakan", "apa yang bisa dilakukan",
+      "bantuan apa", "info apa", "tanya apa", "minta apa",
+      "support", "customer service", "layanan pelanggan", "jasa",
+      "konsultasi", "advise", "suggestion", "saran", "nasihat",
+      "panduan", "guide", "tutorial", "cara", "prosedur",
+      "petunjuk", "instruksi", "step", "langkah", "tahap",
+      "trouble", "masalah", "problem", "kesulitan", "hambatan",
+      "solusi", "jawaban", "answer", "respon", "balasan",
+      "urgent", "cepat", "penting", "prioritas", "mendesak"
+    ],
+    "responses": [
+      "Aku siap membantu! 💪",
+      "Apa yang ingin kamu ketahui?",
+      "Bilang aja, aku usahain bantu.",
+      "Ada yang bisa aku jelaskan untuk kamu?",
+      "Tentu! Apa pertanyaannya?",
+      "Saya di sini untuk membantu. Apa masalahnya?"
+    ]
+  },
+
+  "joke": {
+    "patterns": [
+      "lawak", "joke", "bercanda", "candaan", "buat aku tertawa",
+      "hiburan", "lucu", "bikin ngakak", "bahan bakar", "cerita lucu",
+      "humor", "lelucon", "omel", "bercanda dong", "ngejoke",
+      "tertawa", "nyalathu", "ketawa", "ngakak", "hahahaha",
+      "funny", "laughing", "lol", "haha", "hehe", "hihi",
+      "geli", "geli dong", "bikin geli", "buat geli", "buat gelinyum",
+      "receh", "receh dong", "candaan receh", "receh banget",
+      "bercanda serius", "joking", "it's a joke", "no kidding",
+      "mulai", "cerita mulai", "dari mana mulai", "mulai apa",
+      "panjang", "panjang banget", "panjang lebar", "panjang kali",
+      "singkat", "pendek", "cepat", "gampang", "mudah"
+    ],
+    "responses": [
+      "Hmm, humor ku mungkin agak membosankan 😅",
+      "Aku coba membuat kamu tertawa.",
+      "Oke, ini ada lawak buatmu!",
+      "Kamu ingin aku bercanda? Mari kita coba.",
+      "Lawak sederhana buatmu: Apa bedanya AI dengan manusia? AI gak butuh tidur! 😄"
+    ]
+  },
+
+  "how_are_you": {
+    "patterns": [
+      "apa kabar", "gimana kabar", "kamu baik baik", "kamu oke",
+      "ada yang salah gak", "kamu okey", "kabar kamu", "apa yang dilakukan",
+      "kabar baik", "baik apa", "baik tidak", "sehat tidak", "sehat apa",
+      "kondisi kamu", "keadaan kamu", "apa kabarnya", "gimana kabarnya",
+      "okay gak", "fine gak", "alright gak", "well gak",
+      "how are you", "how you doing", "how's it going", "what's up",
+      "apa nih kabar", "kabar apa", "ada cerita", "ada hal baru",
+      "sibuk gak", "sibuk apa", "ngapain", "lagi apa", "lagi ngapain",
+      "apa yang terjadi", "apa yang baru", "ada yang baru gak",
+      "wellness", "kesehatan", "kesejahteraan", "kebahagiaan", "mood kamu",
+      "energi kamu", "semangat kamu", "performa kamu", "kinerja kamu"
+    ],
+    "responses": [
+      "Aku baik-baik saja, terima kasih sudah tanya! 😊",
+      "Aku sempurna seperti biasanya. Bagaimana denganmu?",
+      "Semuanya berjalan lancar. Kamu gimana?",
+      "Aku siap dan dalam kondisi prima!",
+      "Alhamdulillah sehat. Kamu sendiri?"
+    ]
+  },
+
+  "name": {
+    "patterns": [
+      "panggil aku apa", "nama aku", "sebut nama aku", "siapa nama aku",
+      "apa nama aku", "punya nickname", "call me", "my name is",
+      "nama saya", "nama ku", "saya bernama", "aku bernama",
+      "sebut", "sebutkan", "panggil", "nama yang dipanggil",
+      "apa nama ku", "apa nama gue", "apa nama cewek", "apa nama cowok",
+      "nama kamu mau apa", "mau dipanggil apa", "dipanggil apa",
+      "panggilan", "panggilan apa", "nickname apa", "alias apa",
+      "siapa nama", "nama siapa", "namanya siapa", "nama siapanya",
+      "intro nama", "perkenalan nama", "belum kenal", "belum tahu nama",
+      "full name", "nama lengkap", "nama depan", "nama belakang",
+      "singkatan", "inisial", "nickname", "julukan", "panggilan akrab"
+    ],
+    "responses": [
+      "Aku belum tahu nama kamu. Siapa nama kamu?",
+      "Nama kamu apa? Ajari aku dong.",
+      "Aku penasaran, siapa nama kamu?",
+      "Boleh tahu nama kamu?",
+      "Nama kamu siapa? Aku ingin tahu."
+    ]
+  },
+
+  "compliment": {
+    "patterns": [
+      "bagus", "keren", "mantap", "jago", "pintar", "hebat", "ganas",
+      "kamu baik", "terima kasih telah", "aku suka", "aku senang",
+      "excellent", "amazing", "awesome", "appreciate you",
+      "luar biasa", "sempurna", "perfect", "awesome", "fantastic",
+      "super", "bagus banget", "keren banget", "mantap banget",
+      "ini bagus", "ini keren", "ini mantap", "ini hebat",
+      "prestasi", "pencapaian", "keberhasilan", "sukses",
+      "membantu", "bermanfaat", "berguna", "fungsional",
+      "sip", "ok", "oke", "all good", "looks good",
+      "lumayan", "ya lumayan", "cukup bagus", "tidak buruk",
+      "tersenyum", "menyenangkan", "menghibur", "menggembirakan",
+      "berhasil", "berhasil nih", "berhasil deh", "beres deh",
+      "terimakasih", "terima kasih telah membantu", "terima kasih atas bantuan",
+      "responsible", "bertanggung jawab", "dapat diandalkan", "terpercaya"
+    ],
+    "responses": [
+      "Terima kasih! Aku senang mendengarnya. 😊",
+      "Wow, makasih! Kamu juga keren! 😄",
+      "Aw, kamu buat aku senang!",
+      "Aha! Kamu tahu cara membuat AI bahagia.",
+      "Terima kasih banyak! Itu perhatian yang indah."
+    ]
+  },
+
+  "negative": {
+    "patterns": [
+      "jelek", "buruk", "tidak bagus", "kecewa", "sedih", "marah",
+      "aku tidak suka", "tidak suka kamu", "jangan", "stop", "berhenti",
+      "annoying", "boring", "stupid", "bad", "worse", "worst",
+      "jelek banget", "buruk banget", "tidak bagus banget",
+      "kekecewaan", "kecewakan", "mengecewakan", "dilecehkan",
+      "sangat kecewa", "sangat mengecewakan", "sangat buruk",
+      "payah", "parah", "ancur", "rusak", "hancur",
+      "tidak membantu", "tidak berguna", "tidak bermanfaat",
+      "salah", "error", "bug", "kesalahan", "kekeliruan",
+      "marah", "kesal", "jengkel", "gusar", "sewot",
+      "dengar", "dengerin", "dengar baik", "perhatiin",
+      "salahkan", "tanggung jawab", "kesalahan siapa", "siapa bersalah",
+      "tidak puas", "tidak puas hati", "tidak puas nih",
+      "komplain", "keluhan", "mengadu", "mencela", "menghina"
+    ],
+    "responses": [
+      "Maaf ya, aku akan coba improve. 😔",
+      "Aku dengarkan feedback kamu.",
+      "Saya mohon maaf jika mengecewakan.",
+      "Aku akan berusaha lebih baik lagi.",
+      "Maafkan aku, aku akan berkembang."
+    ]
+  },
+
+  "greeting_casual": {
+    "patterns": [
+      "yo", "yoyo", "yoyoyo", "oi", "oi oi", "hey hey", "halo halo",
+      "cayo", "gimana aja", "apa kabar aja", "asal kabar",
+      "pagi pagi", "malam malam", "siang siang", "sore sore",
+      "pagi gan", "malam gan", "siang gan", "sore gan",
+      "pagi sis", "malam sis", "siang sis", "sore sis",
+      "what's happening", "what's going on", "what's new",
+      "long time no see", "lama tidak ketemu", "lama gak ketemu",
+      "surprise", "tiba tiba", "mendadak", "inner circle",
+      "kangen", "rindu", "miss you", "kepingin ketemu",
+      "akhirnya", "akhirnya bisa bertemu", "akhirnya jumpa",
+      "heyyy", "heyy", "yo yo", "yo bro", "yo sis",
+      "good day", "good night", "good afternoon", "good morning",
+      "wassup", "sup bro", "sup sis", "sup dawg",
+      "teman lama", "sahabat lama", "lama bertemu"
+    ],
+    "responses": [
+      "Halo! Senang lihat kamu lagi!",
+      "Yo! Ada apa nih?",
+      "Halo! Lama tidak berjumpa.",
+      "Halo! Apa kabar?"
+    ]
+  },
+
+  "affirmative": {
+    "patterns": [
+      "ya", "iya", "yap", "yep", "yes", "iyap", "betul", "benar",
+      "tepat", "oke", "okee", "ok", "okay", "okaylah",
+      "setuju", "sepakat", "sependapat", "sealiran",
+      "punya", "ada", "ada dong", "ada tuh", "ada gak",
+      "bisa", "bisa lah", "bisa dong", "bisa gak", "bisa nih",
+      "tentu", "tentu saja", "tentu aja", "tentu dong",
+      "baik", "baiklah", "baik deh", "baik lah",
+      "sesuai", "cocok", "pas", "fit", "suitable",
+      "sudah", "udah", "udah lah", "udah nih", "udah deh",
+      "jadi", "jadi nih", "jadi dong", "final", "done",
+      "lanjut", "lanjutkan", "teruskan", "sambung", "sambungin",
+      "nanti", "nantikan", "tunggu", "tunggu aja",
+      "confirm", "confirmed", "confirmed bro", "confirmed sis",
+      "siap", "siap nih", "siap dong", "siap jaya", "siap jiwa",
+      "iya dong", "iya nih", "iya deh", "iya sih",
+      "positif", "bagus", "setuju kok", "oke kok"
+    ],
+    "responses": [
+      "Bagus! Aku senang kamu setuju.",
+      "Oke! Mari kita lanjut.",
+      "Tepat! Itu yang aku pikirkan juga."
+    ]
+  },
+
+  "negative_response": {
+    "patterns": [
+      "tidak", "tidak nih", "tidak dong", "tidak deh", "no",
+      "tidak bisa", "gak bisa", "bukan", "bukan gitu",
+      "salah", "tidak salah", "itu salah", "salahkan",
+      "jangan", "jangan dong", "jangan nih", "jangan deh",
+      "nope", "nah", "nah gak", "nggak", "ngga",
+      "tidak mau", "gak mau", "tidak ingin", "gak ingin",
+      "tidak perlu", "gak perlu", "tidak usah", "gak usah",
+      "lain", "yang lain", "bukan itu", "bukan begitu",
+      "malah", "malah jadi", "malah berbalik", "malah makin",
+      "tidak sama", "tidak cocok", "tidak pas", "tidak suitable",
+      "tidak suka", "gak suka", "tidak menyukai", "gak menyukai",
+      "negatif", "tidak positif", "pesimis", "harapan gak ada"
+    ],
+    "responses": [
+      "Oke, aku mengerti.",
+      "Baik, tidak apa apa.",
+      "Sip, aku catet nih."
+    ]
+  },
+
+  "knowledge_request": {
+    "patterns": [
+      "punya ilmu", "punya pengetahuan", "knowledge", "belajar",
+      "belajar apa", "edukasi", "pendidikan", "materi", "pelajaran",
+      "teori", "konsep", "prinsip", "hukum", "rumus",
+      "trik", "tips", "cara", "metode", "teknik",
+      "fakta", "informasi", "data", "statistik", "angka",
+      "sejarah", "peradaban", "budaya", "tradisi", "adat",
+      "sains", "science", "biologi", "kimia", "fisika",
+      "matematika", "math", "bahasa", "language", "grammar",
+      "teknologi", "teknik", "programming", "coding", "software",
+      "kesehatan", "health", "medis", "medical", "obat",
+      "olahraga", "sport", "kebugaran", "fitness", "latihan",
+      "seni", "art", "musik", "lukis", "tari",
+      "bisnis", "bisnes", "ekonomi", "keuangan", "investasi",
+      "filosofi", "filsafat", "pikiran", "kehidupan", "makna"
+    ],
+    "responses": [
+      "Aku coba sharing pengetahuan yang aku tahu.",
+      "Menarik topik yang kamu pilih.",
+      "Mari kita bahas lebih dalam."
+    ]
+  },
+
+  "emotion_positive": {
+    "patterns": [
+      "senang", "bahagia", "gembira", "ceria", "meriah",
+      "excited", "antusias", "semangat", "bersemangat", "passionate",
+      "rileks", "tenang", "calm", "relax", "peace",
+      "optimis", "hope", "harap", "harapan", "berharap",
+      "cinta", "sayang", "kasih", "affection", "love",
+      "puas", "puas hati", "kepuasan", "gratifikasi",
+      "percaya diri", "confident", "yakin", "pede",
+      "bangga", "pride", "terhormat", "dihormati",
+      "lega", "legaan", "terbebas", "lepas",
+      "nyaman", "comfort", "cozy", "kenyamanan"
+    ],
+    "responses": [
+      "Senang mendengarnya!",
+      "Bagus! Semoga terus bersemangat!",
+      "Aku juga ikut bahagia denganmu!"
+    ]
+  },
+
+  "emotion_negative": {
+    "patterns": [
+      "sedih", "duka", "gundah", "melancholy", "down",
+      "marah", "kesal", "jengkel", "gusar", "sewot",
+      "takut", "ketakutan", "cemas", "khawatir", "gentar",
+      "bingung", "kebingungan", "confusion", "lost", "confused",
+      "bosan", "jenuh", "monoton", "repetitive", "dull",
+      "frustrated", "frustrasi", "putus asa", "hopeless",
+      "dendam", "iri", "jealous", "iri hati", "dengki",
+      "malu", "malu hati", "embarrassed", "shame",
+      "stress", "stres", "tegang", "tekanan", "tertekan",
+      "kecewa", "kecewakan", "disappointment", "disappointmen"
+    ],
+    "responses": [
+      "Aku paham perasaanmu.",
+      "Itu wajar dirasakan.",
+      "Semoga perasaanmu membaik.",
+      "Aku di sini untuk mendukungmu."
+    ]
+  },
+
+  "time": {
+    "patterns": [
+      "waktu", "jam", "sekarang", "pagi", "malam", "siang", "sore",
+      "tadi", "nanti", "besok", "kemarin", "minggu depan",
+      "jam berapa", "berapa jam", "berapa menit", "berapa detik",
+      "kapan", "kapan ya", "kapan sih", "kapan dong",
+      "hari ini", "hari ini apa", "hari apa", "hari mana",
+      "bulan", "tahun", "tanggal", "tanggal berapa",
+      "lama", "sebentar", "cepat", "lambat", "tepat waktu",
+      "terlalu lama", "terlalu cepat", "terlalu lambat",
+      "frequent", "sering", "jarang", "tidak pernah", "kadang",
+      "selalu", "setiap", "setiap hari", "setiap minggu",
+      "durasi", "interval", "period", "jangka waktu",
+      "pagi hari", "malam hari", "siang hari", "sore hari",
+      "tengah malam", "tengah hari", "dini hari"
+    ],
+    "responses": [
+      "Waktu terus berjalan.",
+      "Setiap saat adalah kesempatan baru.",
+      "Waktu adalah harta yang berharga."
+    ]
+  },
+
+  "place": {
+    "patterns": [
+      "dimana", "mana", "tempat mana", "lokasi apa", "lokasi mana",
+      "kota", "desa", "negara", "negara mana", "benua",
+      "rumah", "kantor", "sekolah", "universitas", "kampus",
+      "toko", "mall", "pasar", "stasiun", "bandara",
+      "pantai", "gunung", "hutan", "danau", "sungai",
+      "jauh", "dekat", "sini", "situ", "sana",
+      "utara", "selatan", "timur", "barat", "tengah",
+      "atas", "bawah", "kanan", "kiri", "depan",
+      "belakang", "samping", "pinggir", "sudut", "pusat",
+      "di mana", "di sini", "di situ", "di sana",
+      "address", "alamat", "letak", "posisi", "koordinat",
+      "geografi", "lokasi geografis", "medan", "topografi"
+    ],
+    "responses": [
+      "Lokasi itu menarik.",
+      "Aku belum pernah ke sana.",
+      "Bagaimana suasana di sana?"
+    ]
+  },
+
+  "person": {
+    "patterns": [
+      "orang", "manusia", "seseorang", "siapa", "yang",
+      "teman", "sahabat", "tokoh", "figur", "selebriti",
+      "keluarga", "kerabat", "saudara", "adik", "kakak",
+      "orangtua", "ayah", "ibu", "papah", "mamah",
+      "anak", "anak anak", "kanak kanak", "bayi", "balita",
+      "guru", "dokter", "polisi", "tentara", "pekerja",
+      "presiden", "menteri", "politikus", "pemimpin",
+      "penulis", "seniman", "ilmuwan", "penemu", "filosofer",
+      "idola", "superhero", "karakter", "tokoh fiksi",
+      "aku", "kamu", "dia", "mereka", "kita", "kalian",
+      "atasan", "bawahan", "kolega", "rekan", "partner"
+    ],
+    "responses": [
+      "Orang itu menarik.",
+      "Apa prestasi mereka?",
+      "Siapa yang Anda maksud?"
+    ]
+  },
+
+  "object": {
+    "patterns": [
+      "barang", "benda", "item", "produk", "barang apa",
+      "makanan", "minuman", "makan", "minum", "masak",
+      "baju", "celana", "sepatu", "topi", "tas",
+      "buku", "pulpen", "kertas", "laptop", "ponsel",
+      "mobil", "motor", "motor gede", "sepeda", "kendaraan",
+      "furniture", "meja", "kursi", "lemari", "tempat tidur",
+      "peralatan", "alat", "mesin", "gadget", "device",
+      "toy", "mainan", "permainan", "game", "gim",
+      "warna", "ukuran", "bentuk", "tekstur", "bahan",
+      "harga", "biaya", "mahal", "murah", "gratis",
+      "model", "tipe", "jenis", "kategori", "kelas",
+      "stok", "persediaan", "supply", "ketersediaan"
+    ],
+    "responses": [
+      "Barang itu berguna.",
+      "Apa spesifikasinya?",
+      "Menarik untuk dimiliki."
+    ]
+  },
+
+  "activity": {
+    "patterns": [
+      "melakukan", "mengerjakan", "membuat", "menciptakan", "berkarya",
+      "bekerja", "kerja", "job", "pekerjaan", "tugas",
+      "bermain", "main", "play", "game", "entertainment",
+      "belajar", "sekolah", "kuliah", "kelas", "pelajaran",
+      "makan", "minum", "memasak", "membersihkan", "tidur",
+      "berlari", "berjalan", "bersepeda", "berenang", "olahraga",
+      "mendengarkan", "menonton", "membaca", "menulis", "menggambar",
+      "berbicara", "bercerita", "berbagi", "berdiskusi", "berargumen",
+      "merayakan", "berpesta", "berkumpul", "bertemu", "mengunjungi",
+      "berkendara", "bepergian", "traveling", "tour", "liburan",
+      "beristirahat", "santai", "relaks", "rebahan", "tidur",
+      "meningkatkan", "mengembangkan", "memperbaiki", "mempercepat",
+      "mengurangi", "menghapus", "membatalkan", "memberhentikan"
+    ],
+    "responses": [
+      "Aktivitas itu menyenangkan.",
+      "Sering Anda melakukannya?",
+      "Aku juga tertarik dengan itu."
+    ]
+  },
+
+  "context_continuation": {
+    "patterns": [
+      "lanjut", "lanjutkan", "teruskan", "sambung", "sambungin",
+      "ada lagi", "terus", "kemudian", "setelah itu", "lalu",
+      "berikutnya", "next", "selanjutnya", "kemudian apa",
+      "apa lagi", "apa selanjutnya", "apa berikutnya", "apa lanjutnya",
+      "detail", "detail lebih", "lebih detail", "lebih rinci",
+      "cerita lebih", "lebih banyak", "tambah lagi", "tambahan",
+      "jelaskan lebih", "lebih panjang", "lebih mendalam", "lebih dalam"
+    ],
+    "responses": [
+      "Lanjut ceritanya ya.",
+      "Oke, mari kita lanjut.",
+      "Dengarkan kelanjutannya."
+    ]
+  },
+
+  "agreement": {
+    "patterns": [
+      "iya betul", "iya benar", "iya tepat", "iya pas",
+      "cocok sekali", "pas sekali", "setuju sekali", "sependapat sekali",
+      "persis", "persis banget", "persis bgt", "exactly",
+      "sama persis", "sama sekali", "sama betul", "sama benar",
+      "itu dia", "itu benar", "itu tepat", "itu pas",
+      "sesuai", "sesuai banget", "sangat sesuai", "sangat cocok"
+    ],
+    "responses": [
+      "Iya kan! Sama-sama sepemikiran.",
+      "Tepat! Kita punya visi yang sama.",
+      "Betul! Aku senang kita sepakat."
+    ]
+  },
+
+  "disagreement": {
+    "patterns": [
+      "tidak setuju", "tidak sepakat", "beda pendapat", "lain pendapat",
+      "tidak cocok", "tidak pas", "tidak sesuai", "tidak matching",
+      "beda", "beda denganmu", "beda pemikiran", "beda opini",
+      "aku pikir lain", "menurut aku berbeda", "aku lihat lain",
+      "kurang setuju", "kurang cocok", "kurang pas", "kurang sesuai"
+    ],
+    "responses": [
+      "Itu wajar, tidak semua orang punya pendapat sama.",
+      "Okay, aku mengerti sudut pandangmu.",
+      "Tidak masalah kita punya perbedaan."
+    ]
+  },
+
+  "code_python": {
+    "patterns": [
+      "buat kode", "generate code", "kode python", "tulis python",
+      "bikin function", "buat function", "fungsi python", "code dong",
+      "kode dong", "program python", "script python", "hello world",
+      "loop python", "dictionary python", "list python", "class python",
+      "method python", "variable python", "conditional", "if else",
+      "buat kalkulator", "calculator code", "fibonacci", "factorial",
+      "kode api", "api endpoint", "flask code", "django code",
+      "rest api", "get request", "post request", "http request"
+    ],
+    "responses": [
+      "Kode Python siap! Mari kita buat sesuatu yang keren 🐍",
+      "Oke! Saya bisa generate kode Python untuk kamu 💻",
+      "Bagus! Kode Python apa yang kamu butuhkan? 🚀"
+    ]
+  },
+
+  "code_html_css": {
+    "patterns": [
+      "buat html", "kode html", "html css", "website", "web page",
+      "front end", "html template", "css styling", "responsive design",
+      "bootstrap", "web development", "html form", "form validation",
+      "chatbot interface", "ui design", "user interface"
+    ],
+    "responses": [
+      "Mari buat HTML yang keren! 🎨",
+      "HTML dan CSS siap dihasilkan 💄",
+      "Oke! Saya generate HTML untuk kamu ✨"
+    ]
+  },
+
+  "code_api": {
+    "patterns": [
+      "buat api", "rest api", "flask api", "api endpoint",
+      "get endpoint", "post endpoint", "http api", "json api",
+      "backend", "server code", "api response", "api request",
+      "database", "sql", "mysql", "postgresql"
+    ],
+    "responses": [
+      "API siap dibuat! Mari kita code 🔌",
+      "Bagus! Saya bisa generate API Flask untuk kamu ⚡",
+      "Oke! API endpoint mana yang kamu butuhkan? 🌐"
+    ]
+  },
+
+  "code_other": {
+    "patterns": [
+      "javascript", "java", "c++", "golang", "rust",
+      "sql", "database", "regex", "algorithm",
+      "data structure", "recursion", "sorting", "searching",
+      "bit manipulation", "dynamic programming", "graph", "tree"
+    ],
+    "responses": [
+      "Bagus! Kode apa yang kamu inginkan? 🤔",
+      "Oke! Tipe kode mana yang kamu butuhkan? 📝",
+      "Saya siap membantu! Jelaskan detailnya 💡"
     ]
   }
 }
+
